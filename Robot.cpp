@@ -25,11 +25,10 @@ void BrazoRobotico::soltar(){
 	cout << "Se ha soltado el elemento\n";
 }
 void BrazoRobotico::mover(double x, double y, double z){
-	cout << "Las coordenadas actuales son: " << x << "," << y << "," << z << "\n";
-	cout << "Introducza las nuevas coordenadas en orden x,y,z: \n";
-	cin >> this->coorx;
-        cin >> this->coory;
-        cin >> this->coorz;
+	this->coorx = x;
+    this->coory = y;
+    this->coorz = z;
+    cout << "Se ha movido a las coordenadas: " << x << "," << y << "," << z;
 }
 
 
